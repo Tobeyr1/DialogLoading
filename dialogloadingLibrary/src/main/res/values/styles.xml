@@ -19,5 +19,9 @@
         <item name="android:windowHideAnimation">@anim/dialog_exit</item>
 
     </style>
+    <!--alert dialog-->
+    <style name="NoBackgroundDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
 
 </resources>

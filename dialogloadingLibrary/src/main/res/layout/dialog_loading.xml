@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_loading"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="10dp">
+
+    <com.tobey.dialogloading.SmoothRoundProgressBar
+        android:id="@+id/progress_smooth"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:cpb_duration="1200"
+        app:cpb_endColor="@android:color/holo_green_light"
+        app:cpb_startColor="@android:color/holo_purple" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="加载中..."
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+</LinearLayout>
