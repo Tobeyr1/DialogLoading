@@ -18,7 +18,7 @@ allprojects {
 **Then add the dependency:**
 ```java
 dependencies {
-	        implementation 'com.github.Tobeyr1:DialogLoading:Tag'
+	       implementation 'com.github.Tobeyr1:DialogLoading:1.0.2'
 	}
 ```
 # Basic Usage
