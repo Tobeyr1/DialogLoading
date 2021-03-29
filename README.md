@@ -31,3 +31,5 @@ Dialog dialog = DialogUtil.createLoadingDialog(context,"text content");
 ```java
  DialogUtil.closeDialog(dialog);
 ```
+
+详细使用效果等可以参考博文[我的第一个开源库-DialogLoading弹出加载框](https://blog.csdn.net/Tobey_r1/article/details/114612478)
