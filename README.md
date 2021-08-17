@@ -18,18 +18,18 @@ allprojects {
 **Then add the dependency:**
 ```java
 dependencies {
-	       implementation 'com.github.Tobeyr1:DialogLoading:1.0.2'
+	       implementation 'com.github.Tobeyr1:DialogLoading:1.0.4'
 	}
 ```
 # Basic Usage
 
 **Open a DialogLoading:**
 ```java
-Dialog dialog = DialogUtil.createLoadingDialog(context,"text content");
+Dialog dialog = DialogUtils.Companion.createLoading(context,"text content");
 ```
 **When network or local data loading ends, use it to close the DialogLoading**
 ```java
- DialogUtil.closeDialog(dialog);
+ DialogUtils.Companion.closeDialog(dialog);
 ```
 **Compared with 1.0.1, 1.0.2 adds a second loading box：**
 
@@ -41,13 +41,13 @@ Dialog dialog = DialogUtil.createLoadingDialog(context,"text content");
 **Open a AlertDialog:**
 
 ```java
-AlertDialog dialog = AlertDialogUtils.loadingDialog(this,"登录中...");
+AlertDialog dialog = AlertDialogUtil.Companion.createLoading(this,"登录中..."); //是androidx的分包alertdialog
 ```
 
 **When network or local data loading ends, use it to close the AlertLoading**
 
 ```java
- AlertDialogUtils.closeDialog(dialog);
+ AlertDialogUtil.Companion.closeDialog(dialog);
 ```
 
 **Added a new method to change the loading color gradient:**
@@ -62,4 +62,4 @@ The effect is as follows:
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210329140130486.gif#pic_center)
 
-详细使用效果等可以参考博文[我的第一个开源库-DialogLoading弹出加载框](https://blog.csdn.net/Tobey_r1/article/details/114612478)
+详细使用效果等可以参考博文[我的第一个开源库-DialogLoading弹出加载框（Kotlin版）](https://blog.csdn.net/Tobey_r1/article/details/114612478)
